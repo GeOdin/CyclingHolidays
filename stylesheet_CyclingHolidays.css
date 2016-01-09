@@ -1,0 +1,20 @@
+/* stylesheet.css
+ *  CSS sheet for the Cycling Holidays webpage
+ * Made on 09-01-2016
+ * By GeOdin
+ */
+
+body {
+	background-color: white;
+	color: white;
+}
+
+#wholePage {
+	position: relative;
+	text-align: center;
+}
+
+#map {
+	display: none;
+	height: 97.75vh;
+}
