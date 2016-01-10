@@ -25,6 +25,7 @@
 	// Create the game object
 	var game = new Object();
 	// Create the startingVariables object
+	game.won = false;
 	var startingVariables = new Object();
 	// Create the player object
 	var player = new Object();
@@ -47,6 +48,11 @@
 
 	// Add the startingVariables to the game object
 	game.startingVariables = startingVariables;
+
+	// Create the markers
+	var markers = createMarkers(game);
+	// Add the markers to the game object
+	game.startingVariables.markers = markers;
 
 	// Add the previous and current location to the game object
 	game.previousLocation = game.startingVariables.locationName;
@@ -97,11 +103,11 @@ function drawMap(game) {
 	// Add the map to the game object
 	game.startingVariables.map = map;
 
-	// Create the markers
-	var markers = createMarkers(game);
-
-	// Add the markers to the game object
-	game.startingVariables.markers = markers;
+	// Add the marker for the previous location to the map
+	game.startingVariables.markers[game.previousLocation].setMap(game.startingVariables.map);
+	// Add the marker for the current location to the map
+	game.startingVariables.markers[game.currentLocation].setMap(game.startingVariables.map);
+	game.startingVariables.markers[game.currentLocation].setIcon("images/cycling.png");
 
 	// Show the city name
 	document.getElementById("locationName").innerHTML = game.currentLocation;
@@ -143,9 +149,6 @@ function createMarkers(game) {
 		    title: locationName,
 		    icon: locationImg
 		});
-
-		// Add the marker to the map
-		markers[locationName].setMap(game.startingVariables.map);
 	}
 
 	//Return the game object

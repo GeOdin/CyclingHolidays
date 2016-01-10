@@ -166,12 +166,16 @@ function toggleDice() {
 		// Show the player title
 		document.getElementById("diceTitle").style.display = "block";
 		// Show the question box
+		document.getElementById("diceImage").style.display = "block";
+		// Show the question box
 		document.getElementById("diceText").style.display = "block";
 		// Show the turn box
 		document.getElementById("dice").style.display = "block";
 	} else {
 		// Put away the player title
 		document.getElementById("diceTitle").style.display = "none";
+		// Show the question box
+		document.getElementById("diceImage").style.display = "block";
 		// Put away the question box
 		document.getElementById("diceText").style.display = "none";
 		// Put away the turn box

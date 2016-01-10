@@ -121,10 +121,25 @@ body {
 	border: 0.25vh solid #ABABAB;
 }
 
+#diceImage {
+	position: relative;
+	display: none;
+	height: 40%;
+	width: 70%;
+	top: 1.5vh;
+	left: 15%;
+	overflow-y: auto;
+}
+
+#diceImage img {
+	height: 90%;
+	width: 90%;
+}
+
 #diceText {
 	position: relative;
 	display: none;
-	height: 80%;
+	height: 40%;
 	width: 70%;
 	top: 1.5vh;
 	left: 15%;
@@ -263,7 +278,7 @@ body {
 	overflow-y: auto;
 }
 
-#buttonPlayer {
+#buttonDice {
 	position: fixed;
 	top: 93vh;
 	left: 14%;
@@ -276,7 +291,7 @@ body {
 	border-radius: 5px;
 }
 
-#buttonDice {
+#buttonPlayer {
 	position: fixed;
 	top: 93vh;
 	left: 34.5%;
