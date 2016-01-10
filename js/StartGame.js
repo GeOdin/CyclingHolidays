@@ -21,17 +21,36 @@
  function startGame() {
 	// Set the variables
 	var locationName = "WAGENINGEN"; // "" for later versions
-	// Create game object
+	var playerName = "";
+	// Create the game object
 	var game = new Object();
 	// Create the startingVariables object
 	var startingVariables = new Object();
+	// Create the player object
+	var player = new Object();
 
 	// Add the starting location
 	startingVariables.locationName = "WAGENINGEN";
 	setLatLon(startingVariables);
 
+	// Get the player's name
+	while (playerName.length < 1) {
+		// Get the player's name
+		playerName = prompt("What is your name? ", "Chariza");
+		// Add the playerName to the player object
+		player.Name = playerName;
+	}
+	// Add the player to the topoPets object
+	game.player = player;
+	// Show the player's name
+	document.getElementById("playerTitle").innerHTML = "<p>" + game.player.Name + "</p>";
+
 	// Add the startingVariables to the game object
 	game.startingVariables = startingVariables;
+
+	// Add the previous and current location to the game object
+	game.previousLocation = game.startingVariables.locationName;
+	game.currentLocation = game.startingVariables.locationName;
 
 	// Draw the map
 	game = drawMap(game);
@@ -83,6 +102,15 @@ function drawMap(game) {
 
 	// Add the markers to the game object
 	game.startingVariables.markers = markers;
+
+	// Show the city name
+	document.getElementById("locationName").innerHTML = game.currentLocation;
+	document.getElementById("locationName").style.display = "block";
+	document.getElementById("location").style.display = "block";
+	document.getElementById("currentLocationTitle").innerHTML = "<p>" + game.currentLocation + "</p>";
+
+	// Show the buttons
+	document.getElementById("buttons").style.display = "block";
 
 	// Show the map
 	document.getElementById("map").style.display = "block";

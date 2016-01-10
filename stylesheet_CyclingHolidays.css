@@ -18,3 +18,299 @@ body {
 	display: none;
 	height: 97.75vh;
 }
+
+#location{
+	position: absolute;
+	display: none;
+	top: 5.5%;
+	left: 25.5%;
+	width: 48%;
+	height: 11.75vh;
+	background-color: transparent;
+	background: rgba(00, 99, 00, .23);
+	font-size: 2em;
+	color: white;
+	text-shadow: 1px 1px #000000;
+	overflow-y: auto;
+}
+
+#locationName {
+	position: relative;
+	display: none;
+	width: 96%;
+	top: 3vh;
+	left: 2%;
+	background-color: rgba(00, 99, 00, .23);
+	border: 0.25vh solid rgba(00, 99, 00, .23);
+	border-radius: 2px;
+}
+
+#player {
+	position: absolute;
+	display: none;
+	top: 50.125%;
+	left: 0.5%;
+	width: 25%;
+	height: 40.5vh;
+	z-index: 99;
+	background-color: transparent;
+	background: rgba(00, 99, 00, .23);
+	color: white;
+	text-shadow: 1px 1px #000000;
+	overflow-y: auto;
+}
+
+#playerTitle {
+	position: relative;
+	display: none;
+	width: 96%;
+	height: 1.3em;
+	left: 2%;
+	cursor: pointer;
+	font-size: 1.2em;
+	color: #ABABAB;
+	background-color: white;
+	text-shadow: 1px 1px #000000;
+	border-radius: 2px;
+}
+
+#playerTitle p {
+	height: 96%;
+	border: 0.25vh solid #ABABAB;
+}
+
+#playerText {
+	position: relative;
+	display: none;
+	width: 96%;
+	top: 1.5vh;
+	left: 2%;
+	background-color: rgba(00, 99, 00, .23);
+}
+
+#dice {
+	position: absolute;
+	display: none;
+	top: 5.5%;
+	left: 0.5%;
+	width: 25%;
+	height: 43.625vh;
+	z-index: 99;
+	background-color: transparent;
+	background: rgba(00, 00, 00, .23);
+	color: white;
+	text-shadow: 1px 1px #000000;
+	overflow-y: auto;
+}
+
+#diceTitle {
+	position: relative;
+	display: none;
+	width: 96%;
+	height: 1.3em;
+	left: 2%;
+	cursor: pointer;
+	font-size: 1.2em;
+	color: #ABABAB;
+	background-color: white;
+	border-radius: 2px;
+}
+
+#diceTitle p {
+	height: 96%;
+	border: 0.25vh solid #ABABAB;
+}
+
+#diceText {
+	position: relative;
+	display: none;
+	height: 80%;
+	width: 70%;
+	top: 1.5vh;
+	left: 15%;
+	overflow-y: auto;
+}
+
+#currentLocation {
+	position: absolute;
+	display: none;
+	top: 5.5%;
+	left: 73.5%;
+	width: 26%;
+	height: 43.625vh;
+	background-color: transparent;
+	z-index: 99;
+	background: rgba(00, 00, 00, .23);
+	color: white;
+	text-shadow: 1px 1px #000000;
+	overflow-y: auto;
+}
+
+#currentLocationTitle {
+	display: none;
+	position: relative;
+	width: 96%;
+	height: 1.3em;
+	left: 2%;
+	cursor: pointer;
+	font-size: 1.2em;
+	color: #ABABAB;
+	background-color: white;
+	border-radius: 2px;
+}
+
+#currentLocationTitle p {
+	height: 96%;
+	border: 0.25vh solid #ABABAB;
+}
+
+#currentLocationText {
+	display: none;
+	position: relative;
+	text-align: center;
+	width: 70%;
+	top: 1.5vh;
+	left: 15%;
+	overflow-y: auto;
+	text-shadow: 1px 1px #000000;
+}
+
+#journal {
+	position: absolute;
+	display: none;
+	top: 50.125%;
+	left: 73.5%;
+	width: 26%;
+	height: 40.5vh;
+	z-index: 99;
+	background-color: transparent;
+ 	background: rgba(00, 99, 00, .23);
+	color: white;
+	text-shadow: 1px 1px #000000;
+	overflow-y: auto;
+}
+
+#journalTitle {
+	position: relative;
+	display: none;
+	width: 96%;
+	height: 1.3em;
+	left: 2%;
+	cursor: pointer;
+	font-size: 1.2em;
+	color: #ABABAB;
+	background-color: white;
+	text-shadow: 1px 1px #000000;
+	border-radius: 2px;
+}
+
+#journalTitle p {
+	height: 96%;
+	border: 0.25vh solid #ABABAB;
+}
+
+#journalText {
+	position: relative;
+	display: none;
+	width: 96%;
+	top: 1.5vh;
+	left: 2%;
+	background-color: rgba(00, 99, 00, .23);
+}
+
+#story {
+	position: absolute;
+	display: none;
+	top: 82.5%;
+	left: 25.5%;
+	width: 48%;
+	height: 8.875vh;
+	z-index: 99;
+	cursor: pointer;
+	background-color: transparent;
+	background: rgba(00, 00, 00, .23);
+	font-size: 1.2em;
+	color: white;
+	text-shadow: 1px 1px #000000;
+	overflow-y: auto;
+}
+
+#storyText {
+	position: relative;
+	display: none;
+	width: 96%;
+	top: 1.5vh;
+	left: 2%;
+	bottom: 1.5vh;
+	background-color: rgba(00, 00, 00, .23);
+	border: 0.25vh solid rgba(00, 00, 00, .23);
+	border-radius: 2px;
+}
+
+#buttons {
+	position: absolute;
+	display: none;
+	top: 91.5%;
+	left: 0.5%;
+	width: 95.75%;
+	height: 8.5vh;
+	z-index: 99;
+	background-color: transparent;
+	background: rgba(00, 00, 00, .23);
+	font-size: 1.2em;
+	color: white;
+	text-shadow: 1px 1px #000000;
+	overflow-y: auto;
+}
+
+#buttonPlayer {
+	position: fixed;
+	top: 93vh;
+	left: 14%;
+	width: 10.5%;
+	cursor: pointer;
+	color: #ABABAB;
+	background-color: white;
+	text-shadow: 1px 1px #000000;
+	border: 0.25vh solid #ABABAB;
+	border-radius: 5px;
+}
+
+#buttonDice {
+	position: fixed;
+	top: 93vh;
+	left: 34.5%;
+	width: 10.5%;
+	cursor: pointer;
+	color: #ABABAB;
+	background-color: white;
+	text-shadow: 1px 1px #000000;
+	border: 0.25vh solid #ABABAB;
+	border-radius: 5px;
+}
+
+#buttonCurrentLocation {
+	position: fixed;
+	top: 93vh;
+	left: 55%;
+	width: 10.5%;
+	cursor: pointer;
+	color: #ABABAB;
+	background-color: white;
+	text-shadow: 1px 1px #000000;
+	border: 0.25vh solid #ABABAB;
+	border-radius: 5px;
+}
+
+#buttonJournal {
+	position: fixed;
+	top: 93vh;
+	left: 75.5%;
+	width: 10.5%;
+	cursor: pointer;
+	color: #ABABAB;
+	background-color: white;
+	text-shadow: 1px 1px #000000;
+	border: 0.25vh solid #ABABAB;
+	border-radius: 5px;
+}

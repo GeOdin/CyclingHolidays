@@ -17,6 +17,10 @@
  * This JavaScript file includes the following functions: *
  *=========================================================
  * cyclingHolidaysGame()
+ * togglePlayer()
+ * toggleDice()
+ * toggleCurrentLocation()
+ * toggleJournal()
  */
 
 ////////////////////////////
@@ -66,6 +70,8 @@
 ////////////////////////////////////
 ////// CyclingHolidaysGame.js //////
 ////////////////////////////////////
+
+* Modify #locationName when player moves to another space
 
 //////////////////
 // Locations.js // // Create 30 locations that can be used as spaces
@@ -126,5 +132,94 @@
 
 function cyclingHolidaysGame() {
 	// Create the starting variables
-	gameTemp = startGame();
+	game = startGame();
 }
+
+////////////////////
+// togglePlayer() //
+////////////////////
+
+function togglePlayer() {
+	if (document.getElementById("player").style.display == "none") {
+		// Show the player title
+		document.getElementById("playerTitle").style.display = "block";
+		// Show the question box
+		document.getElementById("playerText").style.display = "block";
+		// Show the turn box
+		document.getElementById("player").style.display = "block";
+	} else {
+		// Put away the player title
+		document.getElementById("playerTitle").style.display = "none";
+		// Put away the question box
+		document.getElementById("playerText").style.display = "none";
+		// Put away the turn box
+		document.getElementById("player").style.display = "none";
+	}
+}
+
+//////////////////
+// toggleDice() //
+//////////////////
+
+function toggleDice() {
+	if (document.getElementById("dice").style.display == "none") {
+		// Show the player title
+		document.getElementById("diceTitle").style.display = "block";
+		// Show the question box
+		document.getElementById("diceText").style.display = "block";
+		// Show the turn box
+		document.getElementById("dice").style.display = "block";
+	} else {
+		// Put away the player title
+		document.getElementById("diceTitle").style.display = "none";
+		// Put away the question box
+		document.getElementById("diceText").style.display = "none";
+		// Put away the turn box
+		document.getElementById("dice").style.display = "none";
+	}
+}
+
+/////////////////////////////
+// toggleCurrentLocation() //
+/////////////////////////////
+
+function toggleCurrentLocation() {
+	if (document.getElementById("currentLocation").style.display == "none") {
+		// Show the player title
+		document.getElementById("currentLocationTitle").style.display = "block";
+		// Show the question box
+		document.getElementById("currentLocationText").style.display = "block";
+		// Show the turn box
+		document.getElementById("currentLocation").style.display = "block";
+	} else {
+		// Put away the player title
+		document.getElementById("currentLocationTitle").style.display = "none";
+		// Put away the question box
+		document.getElementById("currentLocationText").style.display = "none";
+		// Put away the turn box
+		document.getElementById("currentLocation").style.display = "none";
+	}
+}
+
+/////////////////////
+// toggleJournal() //
+/////////////////////
+
+function toggleJournal() {
+	if (document.getElementById("journal").style.display == "none") {
+		// Show the journalTitle box
+		document.getElementById("journalTitle").style.display = "block";
+		// Show the journalText box
+		document.getElementById("journalText").style.display = "block";
+		// Show the journal box
+		document.getElementById("journal").style.display = "block";
+	} else {
+		// Put away the journalTitle box
+		document.getElementById("journalTitle").style.display = "none";
+		// Put away the journalText box
+		document.getElementById("journalText").style.display = "none";
+		// Put away the journal box
+		document.getElementById("journal").style.display = "none";
+	}
+}
+
